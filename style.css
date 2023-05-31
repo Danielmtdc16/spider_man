@@ -154,3 +154,39 @@ body {
     border-color: transparent transparent #0d0dbe transparent; 
 }
 
+#spider-man .body .left-arm,
+#spider-man .body .right-arm {
+    border-radius: 6px;
+    transform-origin: bottom center 0 50%;
+    position: absolute;
+    width: 13px;
+    height: 54px;
+    bottom: 1px;
+    background: #0d0dbe;
+    border: solid 1px #0505a0;
+    z-index: 1;
+}
+
+#spider-man .body .left-arm:before,
+#spider-man .body .right-arm:before {
+    border-radius: 6px 6px 0 0;
+    content: " ";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: 50%;
+    background: red;
+    border: solid 1px #0505a0;
+}
+
+#spider-man .body .left-arm {
+    transform: rotate(18deg);
+    left: -6px;
+    z-index: 2;
+}
+
+#spider-man .body .right-arm {
+    transform: rotate(-18deg);
+    right: -6px;
+}
