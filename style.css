@@ -190,3 +190,75 @@ body {
     transform: rotate(-18deg);
     right: -6px;
 }
+
+#spider-man .legs {
+    border-radius: 35px;
+    position: absolute;
+    width: 70px;
+    height: 28px;
+    top: 6px;
+    left: 50%;
+    margin-left: -35px;
+    background: transparent;
+    border: solid 10px #0d0dbe;
+    z-index: 0;
+}
+
+#spider-man .legs .left-foot,
+#spider-man .legs .right-foot {
+    position: absolute;
+    width: 19px;
+    height: 12px;
+    top: -11px;
+    background: red;
+    border: solid 1px #0505a0;
+}
+
+#spider-man .legs .left-foot:before,
+#spider-man .legs .left-foot:after,
+#spider-man .legs .right-foot:before, 
+#spider-man .legs .right-foot:after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#spider-man .legs .left-foot {
+    right: 50%;
+    margin-right: 1px;
+}
+
+#spider-man .legs .left-foot:before {
+    top: -7px;
+    right: -1px;
+    border-color: transparent transparent #0505a0 transparent;
+    border-width: 0 0 7px 7px;
+}
+
+#spider-man .legs .left-foot:after {
+    top: -5px;
+    right: 0;
+    border-color: transparent transparent red transparent;
+    border-width: 0 0 5px 5px;
+}
+
+#spider-man .legs .right-foot {
+    left: 50%;
+    margin-left: 1px;
+}
+
+#spider-man .legs .right-foot:before {
+    top: -7px;
+    left: -1px;
+    border-color: transparent transparent #0505a0 transparent;
+    border-width: 0 7px 7px 0;
+}
+
+#spider-man .legs .right-foot:after {
+    top: -5px;
+    left: 0;
+    border-color: transparent transparent red transparent;
+    border-width: 0 5px 5px 0;
+}
