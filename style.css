@@ -87,3 +87,70 @@ body {
     right: 3px;
 }
 
+#spider-man .body {
+    position: absolute;
+    width: 32px;
+    height: 34px;
+    top: 34px;
+    left: 50%;
+    margin-left: -16px;
+    background: #0d0dbe;
+    border: solid 1px #1b254480;
+    z-index: 2;
+}
+
+#spider-man .body:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 4px;
+    right: 4px;
+    bottom: 0;
+    background: red;
+}
+
+#spider-man .body:after {
+    content: " ";
+    position: absolute;
+    width: 39px;
+    height: 6px;
+    top: -7px;
+    left: 50%;
+    margin-left: -19px;
+    background: red;
+    z-index: 0;
+}
+
+#spider-man .body .spider-symbol {
+    border-radius: 50%;
+    position: absolute;
+    width: 4px;
+    height: 10px;
+    left: 50%;
+    bottom: 5px;
+    margin-left: -2px;
+    background: #0d0dbe;
+}
+
+#spider-man .body .spider-symbol:before, #spider-man .body .spider-symbol:after {
+    border-radius: 50%;
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    left: 50%;
+    margin-left: -6px;
+    border-style: double;
+    border-width: 1px;
+}
+
+#spider-man .body .spider-symbol:before {
+    top: 50%;
+    border-color: #0d0dbe transparent transparent transparent; 
+}
+
+#spider-man .body .spider-symbol:after {
+    bottom: 50%;
+    border-color: transparent transparent #0d0dbe transparent; 
+}
+
