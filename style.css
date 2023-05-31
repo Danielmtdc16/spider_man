@@ -69,6 +69,7 @@ body {
 
 #spider-man .head .left-eye,
 #spider-man .head .right-eye {
+    animation: animatedEyes 1s infinite alternate;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     position: absolute;
@@ -76,7 +77,7 @@ body {
     height: 2px;
     bottom: 9px;
     background: white;
-    border: solid 1px #1b405f;
+    border: solid 1.5px #1b405f;
 }
 
 #spider-man .head .left-eye {
@@ -261,4 +262,13 @@ body {
     left: 0;
     border-color: transparent transparent red transparent;
     border-width: 0 5px 5px 0;
+}
+
+@keyframes animatedEyes {
+    0% {
+        height: 1px;
+    }
+    100% {
+        height: 5px;
+    }
 }
