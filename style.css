@@ -282,3 +282,46 @@ body {
         transform: translateY(0px);
     }
 }
+
+#spider-man .head:hover {
+    border-radius: 30px 30px 20px 20px;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+    bottom: -27px;
+    left: 30%;
+    margin-left: -14px;
+    background-color: rgb(223, 107, 107);
+}
+
+#spider-man .head:hover .left-eye,
+#spider-man .head:hover .right-eye {
+    animation: animatedEyes2 1s infinite alternate;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    bottom: 9px;
+    background: white;
+    border: solid 1.5px #1b405f;
+}
+
+#spider-man .head:hover .left-eye {
+    left: 10px;
+    top: 30px;
+}
+
+#spider-man .head:hover .right-eye {
+    right: 10px;
+    top: 30px;
+}
+
+@keyframes animatedEyes2 {
+    0% {
+        height: 1px;
+    }
+    100% {
+        height: 10px;
+    }
+}
